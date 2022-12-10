@@ -22,6 +22,6 @@ fn process_data() -> (u32, u32) {
 #[test]
 fn test_day() {
     let (res1, res2) = process_data();
-    assert_eq!(res1, 66306);
-    assert_eq!(res2, 195292);
+    assert_eq!(res1, 32);
+    assert_eq!(res2, 42);
 }

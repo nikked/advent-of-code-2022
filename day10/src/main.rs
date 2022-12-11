@@ -20,14 +20,9 @@ fn process_data() -> i32 {
         })
         .collect();
 
-    let signal_strengths = calculate_signal_strenghts(&register_positions);
+    let s = calculate_signal_strenghts(&register_positions);
 
-    let sum_of_signal_strengths = signal_strengths[19]
-        + signal_strengths[59]
-        + signal_strengths[99]
-        + signal_strengths[139]
-        + signal_strengths[179]
-        + signal_strengths[219];
+    let sum_of_signal_strengths = s[19] + s[59] + s[99] + s[139] + s[179] + s[219];
 
     for chunk in register_positions.chunks(40) {
         draw_chunk(chunk);
